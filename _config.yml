@@ -10,7 +10,7 @@ description: >
   
   让我们一同出发，在代码与算法的陪伴下，慢慢叙说技术成长的故事。
 keyword: "博客, 个人网站, 计算机, 人工智能, LLM, Agent, 研究生, 学习笔记, 项目实战, 技术分享"
-url: "https://BoxuTechJourney.me" # your host, for absolute URL
+url: "https://BoxuTechJourney.github.io" # your host, for absolute URL
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
@@ -74,13 +74,13 @@ netease_comment: false
 # ba_track_id: [your track id]
 
 # Google Analytics
-ga_track_id: "UA-49627206-1" # Format: UA-xxxxxx-xx
-ga_domain: BoxuTechJourney.me
+ga_track_id: "G-9979TQZL47" # Format: UA-xxxxxx-xx (已注释)
+ga_domain: BoxuTechJourney.github.io # Format: yourdomain.com
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "要做一个有 swag 的程序员 <br> React Team @ Meta"
-sidebar-avatar: https://github.com/Huxpro.png # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "在技术海洋中摸索前行的研究生 <br> 探索AI与LLM"
+sidebar-avatar: https://github.com/BoxuTechJourney.png # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
 featured-tags: true # whether or not using Feature-Tags
