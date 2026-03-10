@@ -1,11 +1,16 @@
 # Site settings
-title: Hux Blog
-SEOTitle: 黄玄的博客 | Hux Blog
+title: 博叙TechJourney Blog
+SEOTitle: 博叙TechJourney Blog
 header-img: img/home-bg.jpg
-email: huxpro@gmail.com
-description: "这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界 | 要做一个有 swag 的程序员"
-keyword: "黄玄, Hux黄玄, Hux, 鬼栈, huxpro, @huxpro, 黄玄的博客, Hux Blog, 博客, 个人网站, 互联网, Web, JavaScript, React, React Native, 前端, 设计"
-url: "https://huangxuan.me" # your host, for absolute URL
+email: boxupei@foxmail.com
+description: >
+  你好，欢迎来到 博叙TechJourney！
+  
+  我是Boxu，一名在技术海洋中摸索前行的研究生。这个博客是我用文字搭建的一方自留地——“博叙”取自名字，意为广博地阅读、细致地叙述；而“Journey”则记录着我在计算机世界里从零到一的每一次尝试与思考。在这里，我会沉淀课程学习的笔记、阅读的论文、复盘项目实战中的踩坑与收获，也会分享对前沿技术的粗浅探索。无论你是偶然路过的同学，还是深耕多年的开发者，希望这里的某段代码、某篇心得，能给你的技术旅程带来一点小小的启发。
+  
+  让我们一同出发，在代码与算法的陪伴下，慢慢叙说技术成长的故事。
+keyword: "博客, 个人网站, 计算机, 人工智能, LLM, Agent, 研究生, 学习笔记, 项目实战, 技术分享"
+url: "https://BoxuTechJourney.me" # your host, for absolute URL
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
@@ -13,10 +18,10 @@ future: true
 
 # SNS settings
 RSS: false
-weibo_username: huxpro
-zhihu_username: huxpro
-github_username: huxpro
-twitter_username: huxpro
+# weibo_username: huxpro
+# zhihu_username: huxpro
+# github_username: huxpro
+# twitter_username: huxpro
 #facebook_username:  huxpro
 #linkedin_username:  firstname-lastname-idxxxx
 
@@ -70,7 +75,7 @@ netease_comment: false
 
 # Google Analytics
 ga_track_id: "UA-49627206-1" # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+ga_domain: BoxuTechJourney.me
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
