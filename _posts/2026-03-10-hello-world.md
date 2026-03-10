@@ -10,7 +10,7 @@ tags:
 ---
 
 这是我的第一篇测试文章。博客终于搭好了！
-借助![huxblog](https://github.com/huxpro/huxpro.github.io)这个开源的博客系统，搭建了自己的博客。
+借助[huxblog](https://github.com/huxpro/huxpro.github.io)这个开源的博客系统，搭建了自己的博客。
 接下来，我会在这里分享我的技术学习笔记、项目实战经验以及对前沿技术的思考。
 Hello，world!
 让我们一起探索计算机世界的奥秘吧！
