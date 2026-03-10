@@ -3,7 +3,7 @@ title: 博叙TechJourney
 SEOTitle: 博叙TechJourney | AI研究生的技术博客
 header-img: img/home-bg.jpg
 email: boxupei@foxmail.com
-description: "记录一名 AI 方向研究生在 LLM、Agent 与研究工程中的学习、实验与思考。"
+description: "记录一名 AI 方向研究生在 LLM、Agent 与强化学习中的学习、实验与思考。"
 keyword: "AI, LLM, Agent, Reinforcement Learning, 研究生, 学习笔记, 论文解读, 项目复盘, 技术博客"
 url: "https://BoxuTechJourney.github.io"
 baseurl: ""
@@ -77,7 +77,7 @@ ga_domain: BoxuTechJourney.github.io
 
 # Sidebar settings
 sidebar: true
-sidebar-about-description: "AI 方向研究生<br>探索 LLM / Agent / Research Engineering"
+sidebar-about-description: "AI 方向研究生<br>探索 LLM / Agent / Reinforcement Learning"
 sidebar-avatar: https://github.com/BoxuTechJourney.png
 
 # Featured Tags

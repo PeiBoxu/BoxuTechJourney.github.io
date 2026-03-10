@@ -4,14 +4,13 @@ Hi, I'm Boxu, an AI graduate student.
 
 ## About Me
 
-This blog documents my learning, experiments, and reflections on LLM, Agent systems, and research engineering.
+This blog documents my learning, experiments, and reflections on LLM, Agent systems, and reinforcement learning.
 
 ## Research Interests
 
 - LLM and Transformer
 - Agent and Agentic RL
 - Reinforcement Learning
-- Research Engineering
 
 ## What I Write
 

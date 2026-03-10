@@ -4,14 +4,13 @@
 
 ## 自我介绍
 
-这个博客用于持续记录我在 LLM、Agent 与研究工程中的学习、实验与思考。
+这个博客用于持续记录我在 LLM、Agent 与强化学习中的学习、实验与思考。
 
 ## 研究兴趣
 
 - LLM 与 Transformer
 - Agent 与 Agentic RL
 - Reinforcement Learning
-- Research Engineering
 
 ## 我在写什么
 
