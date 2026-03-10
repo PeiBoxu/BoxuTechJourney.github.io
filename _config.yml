@@ -1,5 +1,5 @@
 # Site settings
-title: 博叙TechJourney | Blog
+title: 博叙TechJourney Blog
 SEOTitle: 博叙TechJourney Blog
 header-img: img/home-bg.jpg
 email: boxupei@foxmail.com
@@ -18,12 +18,12 @@ future: true
 
 # SNS settings
 RSS: false
-# weibo_username: huxpro
-# zhihu_username: huxpro
-# github_username: huxpro
-# twitter_username: huxpro
-#facebook_username:  huxpro
-#linkedin_username:  firstname-lastname-idxxxx
+# weibo_username:
+# zhihu_username:
+github_username: BoxuTechJourney
+# twitter_username:
+# facebook_username:
+# linkedin_username:
 
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
@@ -64,7 +64,7 @@ kramdown:
       start_line: 1
 
 # Disqus settings
-disqus_username: Boxu # your disqus username, for example: huxpro
+disqus_username: # 如需评论功能，请填写你的 Disqus shortname
 
 # Netease settings
 netease_comment: false
@@ -74,8 +74,8 @@ netease_comment: false
 # ba_track_id: [your track id]
 
 # Google Analytics
-ga_track_id: "G-9979TQZL47" # Format: UA-xxxxxx-xx (已注释)
-ga_domain: BoxuTechJourney.github.io # Format: yourdomain.com
+ga_track_id: "G-9979TQZL47"
+ga_domain: BoxuTechJourney.github.io
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.

@@ -1,7 +1,7 @@
 {
-  "name": "Hux Blog",
-  "short_name": "Hux Blog",
-  "description": "About an engineer & designer who loves web.",
+  "name": "博叙TechJourney Blog",
+  "short_name": "博叙TechJourney",
+  "description": "博叙TechJourney —— 技术成长博客",
   "icons": [{
     "src": "icons/128.png",
     "sizes": "128x128",
