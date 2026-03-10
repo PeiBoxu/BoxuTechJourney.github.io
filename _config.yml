@@ -1,17 +1,15 @@
 # Site settings
-title: 博叙TechJourney Blog
-SEOTitle: 博叙TechJourney Blog
+title: 博叙TechJourney
+SEOTitle: 博叙TechJourney | AI研究生的技术博客
 header-img: img/home-bg.jpg
 email: boxupei@foxmail.com
-description: >
-  你好，欢迎来到 博叙TechJourney！
-  
-  我是Boxu，一名在技术海洋中摸索前行的研究生。这个博客是我用文字搭建的一方自留地——“博叙”取自名字，意为广博地阅读、细致地叙述；而“Journey”则记录着我在计算机世界里从零到一的每一次尝试与思考。在这里，我会沉淀课程学习的笔记、阅读的论文、复盘项目实战中的踩坑与收获，也会分享对前沿技术的粗浅探索。无论你是偶然路过的同学，还是深耕多年的开发者，希望这里的某段代码、某篇心得，能给你的技术旅程带来一点小小的启发。
-  
-  让我们一同出发，在代码与算法的陪伴下，慢慢叙说技术成长的故事。
-keyword: "博客, 个人网站, 计算机, 人工智能, LLM, Agent, 研究生, 学习笔记, 项目实战, 技术分享"
-url: "https://BoxuTechJourney.github.io" # your host, for absolute URL
-baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
+description: "记录一名 AI 方向研究生在 LLM、Agent 与研究工程中的学习、实验与思考。"
+keyword: "AI, LLM, Agent, Reinforcement Learning, 研究生, 学习笔记, 论文解读, 项目复盘, 技术博客"
+url: "https://BoxuTechJourney.github.io"
+baseurl: ""
+
+# Author
+author: Boxu
 
 # Publish posts or collection documents with a future date.
 future: true
@@ -41,7 +39,7 @@ exclude:
   ]
 anchorjs: true # if you want to customize anchor. check out line:181 of `post.html`
 # If you have timezone issue (e.g. #68) in China, uncomment to use this:
-#timezone: CN
+timezone: Asia/Shanghai
 
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
@@ -78,9 +76,9 @@ ga_track_id: "G-9979TQZL47"
 ga_domain: BoxuTechJourney.github.io
 
 # Sidebar settings
-sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "在技术海洋中摸索前行的研究生 <br> 探索AI与LLM"
-sidebar-avatar: https://github.com/BoxuTechJourney.png # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar: true
+sidebar-about-description: "AI 方向研究生<br>探索 LLM / Agent / Research Engineering"
+sidebar-avatar: https://github.com/BoxuTechJourney.png
 
 # Featured Tags
 featured-tags: true # whether or not using Feature-Tags

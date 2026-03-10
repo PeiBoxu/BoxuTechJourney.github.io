@@ -1,0 +1,31 @@
+- title: 从零理解 LLM / Transformer
+  slug: llm-transformer
+  description: 从基础 Attention 机制到完整的大语言模型架构，系统梳理 Transformer 家族的核心原理与演进脉络。
+  status: 进行中
+  count: 0
+  start_url: "#"
+  updated: 2026-03-10
+
+- title: Agent 与 Agentic RL 学习路线
+  slug: agent-agentic-rl
+  description: 探索 LLM Agent 的设计范式、工具调用、规划机制，以及 Agentic RL 的前沿研究方向。
+  status: 规划中
+  count: 0
+  start_url: "#"
+  updated: 2026-03-10
+
+- title: 论文精读方法论
+  slug: paper-reading-methodology
+  description: 如何高效阅读、拆解和复现一篇 AI 论文？分享我的论文阅读框架与实践经验。
+  status: 规划中
+  count: 0
+  start_url: "#"
+  updated: 2026-03-10
+
+- title: 研究生科研工作流与工具链
+  slug: research-workflow
+  description: 从文献管理、实验记录到论文写作，打造高效的科研工作流与工具体系。
+  status: 规划中
+  count: 0
+  start_url: "#"
+  updated: 2026-03-10

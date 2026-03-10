@@ -260,6 +260,51 @@
 </script>
 {% endif %}
 
+<script>
+    (function () {
+        var blocks = document.querySelectorAll('.post-container pre');
+        for (var i = 0; i < blocks.length; i++) {
+            var pre = blocks[i];
+            var btn = document.createElement('button');
+            btn.className = 'copy-code-btn';
+            btn.type = 'button';
+            btn.innerText = '复制';
+            btn.addEventListener('click', function (e) {
+                var targetPre = e.target.parentNode;
+                var code = targetPre.querySelector('code') ? targetPre.querySelector('code').innerText : targetPre.innerText;
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(code);
+                    e.target.innerText = '已复制';
+                    setTimeout(function () { e.target.innerText = '复制'; }, 1200);
+                }
+            });
+            pre.appendChild(btn);
+        }
+    })();
+
+    (function () {
+        var params = new URLSearchParams(window.location.search);
+        var category = params.get('category');
+        if (!category) return;
+        var cards = document.querySelectorAll('.post-card[data-category]');
+        for (var i = 0; i < cards.length; i++) {
+            var card = cards[i];
+            if (card.getAttribute('data-category') !== category) {
+                card.style.display = 'none';
+            }
+        }
+        var filters = document.querySelectorAll('.note-filter .tag');
+        for (var j = 0; j < filters.length; j++) {
+            var href = filters[j].getAttribute('href') || '';
+            if (href.indexOf('category=' + category) > -1) {
+                filters[j].className += ' active';
+            } else if (href.indexOf('/notes/') > -1 && href.indexOf('category=') === -1) {
+                filters[j].className = filters[j].className.replace(' active', '');
+            }
+        }
+    })();
+</script>
+
 <!-- Simple Jekyll Search -->
 <script>
     // https://stackoverflow.com/questions/1912501/unescape-html-entities-in-javascript

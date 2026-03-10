@@ -1,46 +1,115 @@
 ---
 layout: page
-description: "「博学于文，叙之以程」"
+title: Home
+description: "记录一名 AI 方向研究生在 LLM、Agent 与研究工程中的学习、实验与思考。"
+header-img: "img/home-bg.jpg"
+header-mask: 0.45
 ---
 
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">
-            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-        <div class="post-content-preview">
-            {% if post.lang == 'en' %}
-                {{ post.content | strip_html | truncate:300 }}
-            {% else %}
-                {{ post.content | strip_html | truncate:200 }}
-            {% endif %}
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%Y-%m-%d" }}
-    </p>
+<div class="page-section">
+    <section class="hero-panel">
+        <h1>博叙 TechJourney</h1>
+        <p class="hero-subtitle">记录一名 AI 方向研究生在 LLM、Agent 与研究工程中的学习、实验与思考。</p>
+        <p class="hero-meta">学习笔记 / 论文解读 / 项目复盘 / 研究思考 / 工具教程</p>
+        <p>
+            <a class="btn btn-brand btn-brand-primary" href="{{ '/notes/' | prepend: site.baseurl }}">开始阅读</a>
+            <a class="btn btn-brand btn-brand-secondary" href="{{ '/about/' | prepend: site.baseurl }}">关于我</a>
+        </p>
+    </section>
 </div>
-<hr>
-{% endfor %}
 
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
+<div class="page-section">
+    <h2 class="section-title">栏目入口</h2>
+    <div class="grid-cards">
+        {% for item in site.data.categories %}
+        <article class="grid-col-4 info-card">
+            <h3>{{ item.name }}</h3>
+            <p>{{ item.description }}</p>
+        </article>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="page-section">
+    <h2 class="section-title">精选专题</h2>
+    <p class="section-desc">围绕核心研究方向构建系列化内容。</p>
+    <div class="grid-cards">
+        {% for s in site.data.series limit:4 %}
+        <article class="grid-col-6 info-card">
+            <h3>{{ s.title }}</h3>
+            <p>{{ s.description }}</p>
+            <p style="margin-top: 10px;">
+                <span class="badge-soft">{{ s.status }}</span>
+                <span class="badge-soft">{{ s.count }} 篇</span>
+            </p>
+        </article>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="page-section">
+    <h2 class="section-title">最新文章</h2>
+    {% for post in site.posts limit:8 %}
+    {% assign words = post.content | strip_html | number_of_words %}
+    {% assign minutes = words | divided_by: 280 | plus: 1 %}
+    <article class="post-card">
+        <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+        <div class="meta">{{ post.date | date: "%Y-%m-%d" }} · {{ post.category | default: "未分类" }} · 约 {{ minutes }} 分钟阅读</div>
+        <p class="excerpt">{{ post.content | strip_html | truncate: 180 }}</p>
+        <p>
+            {% for t in post.tags limit:5 %}
+            <span class="badge-soft">{{ t }}</span>
+            {% endfor %}
+        </p>
+    </article>
+    {% endfor %}
+</div>
+
+<div class="page-section">
+    <h2 class="section-title">精选文章</h2>
+    {% if site.data.featured.posts and site.data.featured.posts.size > 0 %}
+        {% for fp in site.data.featured.posts limit:3 %}
+            {% assign hit = site.posts | where: "url", fp.url | first %}
+            {% if hit %}
+            <article class="post-card">
+                <h3><a href="{{ hit.url | prepend: site.baseurl }}">{{ hit.title }}</a></h3>
+                <div class="meta">{{ hit.date | date: "%Y-%m-%d" }}</div>
+                <p class="excerpt">{{ fp.reason | default: hit.excerpt | strip_html | truncate: 120 }}</p>
+            </article>
+            {% endif %}
+        {% endfor %}
+    {% else %}
+    <article class="info-card">
+        <p class="coming-soon">精选文章暂未配置。你可以在 _data/featured.yml 中添加 3 篇代表作。</p>
+    </article>
     {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}
+</div>
+
+<div class="page-section">
+    <h2 class="section-title">项目展示</h2>
+    <div class="grid-cards">
+        {% for p in site.data.projects limit:4 %}
+        <article class="grid-col-6 info-card">
+            <h3>{{ p.title }}</h3>
+            <p>{{ p.description }}</p>
+            <p style="margin-top: 10px;"><span class="badge-soft">{{ p.tech }}</span></p>
+            <p style="margin-top: 8px;">
+                {% if p.url %}<a href="{{ p.url }}" target="_blank">查看项目</a>{% endif %}
+                {% if p.github %} · <a href="{{ p.github }}" target="_blank">GitHub</a>{% endif %}
+            </p>
+        </article>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="page-section">
+    <h2 class="section-title">About</h2>
+    <article class="info-card">
+        <h3>Boxu</h3>
+        <p>AI 方向研究生，关注 LLM / Agent / Research Engineering。这里记录学习、实验与研究实践。</p>
+        <p style="margin-top: 10px;">
+            {% if site.github_username %}<a href="https://github.com/{{ site.github_username }}" target="_blank">GitHub</a>{% endif %}
+            {% if site.email %} · <a href="mailto:{{ site.email }}">Email</a>{% endif %}
+        </p>
+    </article>
+</div>

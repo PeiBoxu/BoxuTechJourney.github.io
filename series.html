@@ -1,0 +1,27 @@
+---
+layout: page
+title: Series
+description: "专题化学习路径：把分散知识组织成可持续推进的系列。"
+header-img: "img/home-bg.jpg"
+header-mask: 0.45
+---
+
+<div class="page-section">
+  <h2 class="section-title">Series</h2>
+  <p class="section-desc">面向 LLM、Agent 与科研方法的系列化内容。</p>
+
+  <div class="grid-cards">
+    {% for s in site.data.series %}
+    <article class="grid-col-6 info-card">
+      <h3>{{ s.title }}</h3>
+      <p>{{ s.description }}</p>
+      <p style="margin-top:10px;">
+        <span class="badge-soft">状态：{{ s.status }}</span>
+        <span class="badge-soft">文章数：{{ s.count }}</span>
+        <span class="badge-soft">更新：{{ s.updated | date: "%Y-%m-%d" }}</span>
+      </p>
+      <p style="margin-top:8px;"><a href="{{ s.start_url }}">推荐起始文章</a></p>
+    </article>
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,35 @@
+---
+layout: page
+title: Notes
+description: "按栏目浏览全部文章，建立长期可扩展的知识地图。"
+header-img: "img/home-bg.jpg"
+header-mask: 0.45
+---
+
+<div class="page-section">
+  <h2 class="section-title">Notes</h2>
+  <p class="section-desc">覆盖学习笔记、论文解读、项目复盘、研究思考、工具教程。</p>
+
+  <div class="note-filter">
+    <a class="tag active" href="{{ '/notes/' | prepend: site.baseurl }}">全部</a>
+    {% for cat in site.data.categories %}
+    <a class="tag" href="{{ '/notes/?category=' | prepend: site.baseurl }}{{ cat.slug }}">{{ cat.name }}</a>
+    {% endfor %}
+  </div>
+
+  {% for post in site.posts %}
+  {% assign words = post.content | strip_html | number_of_words %}
+  {% assign minutes = words | divided_by: 280 | plus: 1 %}
+  {% assign post_category = post.category | default: '未分类' %}
+  <article class="post-card" data-category="{{ post_category | slugify }}">
+    <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+    <div class="meta">{{ post.date | date: "%Y-%m-%d" }} · {{ post_category }} · 约 {{ minutes }} 分钟阅读</div>
+    <p class="excerpt">{{ post.content | strip_html | truncate: 200 }}</p>
+    <p>
+      {% for t in post.tags %}
+      <span class="badge-soft">{{ t }}</span>
+      {% endfor %}
+    </p>
+  </article>
+  {% endfor %}
+</div>

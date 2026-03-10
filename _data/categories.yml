@@ -1,0 +1,24 @@
+- name: 学习笔记
+  slug: study-notes
+  icon: fa-book
+  description: 梳理课程知识、核心概念与方法理解
+
+- name: 论文解读
+  slug: paper-reading
+  icon: fa-file-text
+  description: 拆解论文贡献、方法设计与实验逻辑
+
+- name: 项目复盘
+  slug: project-review
+  icon: fa-code
+  description: 记录项目实践、工程实现与踩坑总结
+
+- name: 研究思考
+  slug: research-thoughts
+  icon: fa-lightbulb-o
+  description: 沉淀问题意识、研究想法与方法反思
+
+- name: 工具教程
+  slug: tools-tutorial
+  icon: fa-wrench
+  description: 分享高频工具链、环境配置与效率方法

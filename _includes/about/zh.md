@@ -1,9 +1,40 @@
-Hey，我是Boxu，欢迎来到 博叙TechJourney！
+# 关于我
 
-这是我的个人博客，在这里我会分享我的技术学习笔记、项目实战经验以及对前沿技术的思考。
+你好，我是 Boxu，一名 AI 方向研究生。
 
-无论你是偶然路过的同学，还是深耕多年的开发者，希望这里的某段代码、某篇心得，能给你的技术旅程带来一点小小的启发。
+## 自我介绍
 
-### Publications
+这个博客用于持续记录我在 LLM、Agent 与研究工程中的学习、实验与思考。
 
-### Projects
+## 研究兴趣
+
+- LLM 与 Transformer
+- Agent 与 Agentic RL
+- Reinforcement Learning
+- Research Engineering
+
+## 我在写什么
+
+- 学习笔记
+- 论文解读
+- 项目复盘
+- 研究思考
+- 工具教程
+
+## 当前关注问题
+
+- 如何提升 Agent 在复杂任务中的稳定性与可解释性？
+- 如何把研究原型更高效地工程化和复现？
+
+## Projects
+
+可在 Projects 页面查看。
+
+## Publications
+
+Coming Soon
+
+## 联系方式
+
+- GitHub: [https://github.com/BoxuTechJourney](https://github.com/BoxuTechJourney)
+- Email: [boxupei@foxmail.com](mailto:boxupei@foxmail.com)

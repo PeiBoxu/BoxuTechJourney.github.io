@@ -1,0 +1,11 @@
+- title: 个人技术博客
+  description: 基于 Jekyll 搭建的个人技术博客，记录 AI 方向研究生的学习与思考。
+  tech: Jekyll, GitHub Pages, HTML/CSS
+  url: https://BoxuTechJourney.github.io
+  github: https://github.com/BoxuTechJourney/BoxuTechJourney.github.io
+
+# - title: 项目名称
+#   description: 项目简介
+#   tech: 技术栈关键词
+#   url: 项目链接
+#   github: GitHub 仓库链接

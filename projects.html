@@ -1,0 +1,26 @@
+---
+layout: page
+title: Projects
+description: "研究、课程与工程项目的持续记录。"
+header-img: "img/home-bg.jpg"
+header-mask: 0.45
+---
+
+<div class="page-section">
+  <h2 class="section-title">Projects</h2>
+  <p class="section-desc">研究实践与工程实现并重，保持可复现与可总结。</p>
+
+  <div class="grid-cards">
+    {% for p in site.data.projects %}
+    <article class="grid-col-6 info-card">
+      <h3>{{ p.title }}</h3>
+      <p>{{ p.description }}</p>
+      <p style="margin-top:10px;"><span class="badge-soft">{{ p.tech }}</span></p>
+      <p style="margin-top:8px;">
+        {% if p.github %}<a href="{{ p.github }}" target="_blank">GitHub</a>{% endif %}
+        {% if p.url %} · <a href="{{ p.url }}" target="_blank">链接</a>{% endif %}
+      </p>
+    </article>
+    {% endfor %}
+  </div>
+</div>
