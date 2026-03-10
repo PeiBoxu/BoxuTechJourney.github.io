@@ -1,5 +1,5 @@
 # Site settings
-title: 博叙TechJourney Blog
+title: 博叙TechJourney | Blog
 SEOTitle: 博叙TechJourney Blog
 header-img: img/home-bg.jpg
 email: boxupei@foxmail.com
@@ -96,5 +96,5 @@ page-mathjax: false
 # Friends
 friends:
   [
-  
+
   ]
